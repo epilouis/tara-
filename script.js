@@ -29,7 +29,7 @@ function chooseMovie(movie) {
     if (movie === 'yes') {
         document.getElementById('finalMessage').innerHTML = "<h2>💖 Perfect! Now all that's left is... 💖</h2><h3>I look forward on the date! 😘</h3>";
     } else {
-        alert(`Great choice! A ${movie} place will be fun! 🎬`);
+        alert(`Great choice! Let's meet at ${movie}!`);
         showNextQuestion("movieQuestion", "activityQuestion");
     }
 }
