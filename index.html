@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Our Virtual Date 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <audio id="bg-music" src="Pasilyo.mp3" loop></audio>
+    <div class="hearts"></div>
+    <div class="container">
+        <h1>🌟 Let's Plan Our Virtual Date! 🌟</h1>
+        <div class="question" id="startQuestion">
+            <h2>Are you ready to plan our date? 💖</h2>
+            <button class="choice" onclick="startPlanning()">Press me</button>
+        </div>
+        <div class="question hidden" id="placeQuestion">
+            <h2>What should we eat? 🍕🍣🍔</h2>
+            <button class="choice" onclick="choosePlace('Tusok-Tusok')">Tusok-Tusok 🍢</button>
+            <button class="choice" onclick="choosePlace('Takoyaki')">Takoyaki 🍡</button>
+            <button class="choice" onclick="choosePlace('Burgers')">Burger🍔</button>
+        </div>
+        <div class="question hidden" id="movieQuestion">
+            <h2>Where are we going to hang out? 🎬</h2>
+            <button class="choice" onclick="chooseMovie('Bigbrew(Maliksi)')">Bigbrew(Maliksi) 🧋</button>
+            <button class="choice" onclick="chooseMovie('Open Field🌄')"> Open Field🌄</button>
+            <button class="choice" onclick="chooseMovie('Paduda(Maliksi)')">Paduda (Maliksi)🛣️</button>
+        </div>
+        <div class="question hidden" id="activityQuestion">
+            <h2>What should we do after? 🎡</h2>
+            <button class="choice" onclick="chooseActivity('Stroll🚶')">Stroll🚶</button>
+            <button class="choice" onclick="chooseActivity('Dessert')">Dessert Date 🍰</button>
+            <button class="choice" onclick="chooseActivity('Video Games')">Video Games 🎮</button>
+        </div>
+        <div class="question hidden" id="finalMessage">
+            <h2>💖 Perfect! Now all that's left is... 💖</h2>
+            <h3>For you to say YES to a real date! 😘</h3>
+            <button class="yes-button" onclick="chooseMovie('yes')">Yes</button>
+            <button id="noButton" class="no-button" onclick="chooseMovie('no')">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
